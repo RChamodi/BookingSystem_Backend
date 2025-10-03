@@ -45,7 +45,7 @@ public class BookingService {
                 .slot(slot)
                 .serviceEntity(serviceEntity)
                 .dateTime(slot.getStartTime())
-                .location("Online or at " + serviceEntity.getLocation())
+                .location( serviceEntity.getLocation())
                 .approved(false)
                 .cancelled(false)
                 .build();
